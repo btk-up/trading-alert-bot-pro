@@ -306,7 +306,7 @@ fig.update_yaxes(gridcolor='#30363d', zerolinecolor='#555')
 # ============================================================
 # SAUVEGARDE
 # ============================================================
-output_dir = r"C:\Users\zakar\AlertBot"
+output_dir = os.path.dirname(os.path.abspath(__file__))
 os.makedirs(output_dir, exist_ok=True)
 
 html_path  = os.path.join(output_dir, "alert_dashboard.html")
